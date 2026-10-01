@@ -1,0 +1,37 @@
+DUT,Test,Wanted_dBm,CI_dB,EbNo_dB,PER,Limit,Verdict
+Nominal,LE1M sensitivity,NaN,Inf,10.8070021881838,0.04,0.308,PASS
+Nominal,LE125K sensitivity,NaN,Inf,12.7272827891533,0.004,0.308,PASS
+Nominal,Step5 co-channel C/I 21 dB,NaN,21,20,0,0.308,PASS
+Nominal,C/I co-channel,-67,21,40,0,0.308,PASS
+Nominal,C/I +1 MHz,-67,15,40,0,0.308,PASS
+Nominal,C/I -1 MHz,-67,15,40,0,0.308,PASS
+Nominal,C/I +2 MHz,-67,-17,40,0.092,0.308,PASS
+Nominal,C/I -2 MHz,-67,-17,40,0.12,0.308,PASS
+Nominal,C/I +3 MHz,-67,-27,40,0.178,0.308,PASS
+Nominal,C/I -3 MHz,-67,-27,40,0.22075055187638,0.308,PASS
+Nominal,Blocking CW 2399 MHz,-67,-32,40,0,0.308,PASS
+Nominal,Intermod n=3 (+3/+6 MHz),-64,-14,43,0,0.308,PASS
+Degraded,LE1M sensitivity,NaN,Inf,6.80700218818381,0.970873786407767,0.308,FAIL
+Degraded,LE125K sensitivity,NaN,Inf,8.72728278915329,1,0.308,FAIL
+Degraded,Step5 co-channel C/I 21 dB,NaN,21,16,0,0.308,PASS
+Degraded,C/I co-channel,-67,21,36,0,0.308,PASS
+Degraded,C/I +1 MHz,-67,15,36,0,0.308,PASS
+Degraded,C/I -1 MHz,-67,15,36,0,0.308,PASS
+Degraded,C/I +2 MHz,-67,-17,36,0.086,0.308,PASS
+Degraded,C/I -2 MHz,-67,-17,36,0.13,0.308,PASS
+Degraded,C/I +3 MHz,-67,-27,36,0.230414746543779,0.308,PASS
+Degraded,C/I -3 MHz,-67,-27,36,0.241545893719807,0.308,PASS
+Degraded,Blocking CW 2399 MHz,-67,-32,36,0,0.308,PASS
+Degraded,Intermod n=3 (+3/+6 MHz),-64,-14,39,0,0.308,PASS
+Nonlinear,LE1M sensitivity,NaN,Inf,10.8070021881838,0.04,0.308,PASS
+Nonlinear,LE125K sensitivity,NaN,Inf,12.7272827891533,0.004,0.308,PASS
+Nonlinear,Step5 co-channel C/I 21 dB,NaN,21,20,0,0.308,PASS
+Nonlinear,C/I co-channel,-67,21,40,0,0.308,PASS
+Nonlinear,C/I +1 MHz,-67,15,40,0,0.308,PASS
+Nonlinear,C/I -1 MHz,-67,15,40,0,0.308,PASS
+Nonlinear,C/I +2 MHz,-67,-17,40,0.092,0.308,PASS
+Nonlinear,C/I -2 MHz,-67,-17,40,0.12,0.308,PASS
+Nonlinear,C/I +3 MHz,-67,-27,40,0.19,0.308,PASS
+Nonlinear,C/I -3 MHz,-67,-27,40,0.231481481481481,0.308,PASS
+Nonlinear,Blocking CW 2399 MHz,-67,-32,40,0,0.308,PASS
+Nonlinear,Intermod n=3 (+3/+6 MHz),-64,-14,43,0,0.308,PASS

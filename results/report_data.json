@@ -1,0 +1,1304 @@
+{
+  "s1": {
+    "T1": [
+      {
+        "PHY": "LE1M",
+        "BitRate_kbps": 1000,
+        "AirTime_us": 336,
+        "OBW99_kHz": 1267.9941733057587
+      },
+      {
+        "PHY": "LE2M",
+        "BitRate_kbps": 2000,
+        "AirTime_us": 172,
+        "OBW99_kHz": 2536.766058500561
+      },
+      {
+        "PHY": "LE500K",
+        "BitRate_kbps": 500,
+        "AirTime_us": 974,
+        "OBW99_kHz": 1212.3514176907688
+      },
+      {
+        "PHY": "LE125K",
+        "BitRate_kbps": 125,
+        "AirTime_us": 2768,
+        "OBW99_kHz": 1158.6037043643526
+      }
+    ],
+    "hitsAll": 27,
+    "hitsAFH": 0,
+    "nEvents": 100,
+    "nBad": 10
+  },
+  "s2": {
+    "T2": [
+      {
+        "PHY": "LE1M",
+        "BitRate_kbps": 1000,
+        "EbNo_req_dB": 6.77274,
+        "Sensitivity_dBm": -100.22726,
+        "Datasheet_dBm": -95
+      },
+      {
+        "PHY": "LE2M",
+        "BitRate_kbps": 2000,
+        "EbNo_req_dB": 6.7875564556962011,
+        "Sensitivity_dBm": -97.202143587663983,
+        "Datasheet_dBm": null
+      },
+      {
+        "PHY": "LE500K",
+        "BitRate_kbps": 500,
+        "EbNo_req_dB": 5.9041368932038836,
+        "Sensitivity_dBm": -104.10616306343593,
+        "Datasheet_dBm": null
+      },
+      {
+        "PHY": "LE125K",
+        "BitRate_kbps": 125,
+        "EbNo_req_dB": 7.7156564127764122,
+        "Sensitivity_dBm": -108.31524345714303,
+        "Datasheet_dBm": -103
+      }
+    ],
+    "NP": 1000,
+    "NF": 7,
+    "sens": [
+      -100.22726,
+      -97.202143587663983,
+      -104.10616306343593,
+      -108.31524345714303
+    ]
+  },
+  "s3": {
+    "breakRaw_kHz": 2.5,
+    "reqDisc": 8.807002188183807,
+    "EbNoDisc": 11.807002188183807,
+    "T3": [
+      {
+        "CFO_kHz": 0,
+        "PER_discriminator": 0.015
+      },
+      {
+        "CFO_kHz": 25,
+        "PER_discriminator": 0.01
+      },
+      {
+        "CFO_kHz": 50,
+        "PER_discriminator": 0.01
+      },
+      {
+        "CFO_kHz": 75,
+        "PER_discriminator": 0.02
+      },
+      {
+        "CFO_kHz": 100,
+        "PER_discriminator": 0.025
+      },
+      {
+        "CFO_kHz": 125,
+        "PER_discriminator": 0.015
+      },
+      {
+        "CFO_kHz": 150,
+        "PER_discriminator": 0.05
+      },
+      {
+        "CFO_kHz": 175,
+        "PER_discriminator": 0.05
+      },
+      {
+        "CFO_kHz": 200,
+        "PER_discriminator": 0.135
+      }
+    ]
+  },
+  "s4": {
+    "T4": [
+      {
+        "PHY": "LE1M",
+        "Sensitivity_dBm": -100.22726,
+        "Range_m": 21.923438308819428
+      },
+      {
+        "PHY": "LE2M",
+        "Sensitivity_dBm": -97.202143587663983,
+        "Range_m": 17.380867664431186
+      },
+      {
+        "PHY": "LE500K",
+        "Sensitivity_dBm": -104.10616306343593,
+        "Range_m": 29.526055750726233
+      },
+      {
+        "PHY": "LE125K",
+        "Sensitivity_dBm": -108.31524345714303,
+        "Range_m": 40.785718293010277
+      }
+    ],
+    "T4b": [
+      {
+        "PHY": "LE1M",
+        "Coverage_pct": 51.606978879706155
+      },
+      {
+        "PHY": "LE2M",
+        "Coverage_pct": 41.1386593204775
+      },
+      {
+        "PHY": "LE500K",
+        "Coverage_pct": 66.309560248954185
+      },
+      {
+        "PHY": "LE125K",
+        "Coverage_pct": 66.942148760330582
+      }
+    ],
+    "frac2Mwins": 49.607182940516275
+  },
+  "s5": {
+    "results": [
+      {
+        "DUT": "Nominal",
+        "Test": "LE1M sensitivity",
+        "PER": 0.035,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "LE125K sensitivity",
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "LE1M co-channel C/I 21 dB",
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "LE1M sensitivity",
+        "PER": 0.970873786407767,
+        "Limit": 0.308,
+        "Verdict": "FAIL"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "LE125K sensitivity",
+        "PER": 1,
+        "Limit": 0.308,
+        "Verdict": "FAIL"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "LE1M co-channel C/I 21 dB",
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      }
+    ],
+    "nReg": 2,
+    "ref1": 10.807002188183807,
+    "refc": 12.727282789153293,
+    "reqDiscC": 10.727282789153293
+  },
+  "s6": {
+    "perNoAFH": 0.13513513513513514,
+    "perAFH": 0,
+    "nOverlap": 10
+  },
+  "s8": {
+    "T8": [
+      {
+        "PHY": "LE1M",
+        "Channel": "awgn",
+        "EbNo_req_dB": 9.1264852433882719,
+        "Penalty_vs_AWGN_dB": 0
+      },
+      {
+        "PHY": "LE1M",
+        "Channel": "rician",
+        "EbNo_req_dB": 12.883012237442923,
+        "Penalty_vs_AWGN_dB": 3.7565269940546511
+      },
+      {
+        "PHY": "LE1M",
+        "Channel": "rayleigh",
+        "EbNo_req_dB": 13.44038082644628,
+        "Penalty_vs_AWGN_dB": 4.3138955830580077
+      },
+      {
+        "PHY": "LE125K",
+        "Channel": "awgn",
+        "EbNo_req_dB": 11.095212300512522,
+        "Penalty_vs_AWGN_dB": 0
+      },
+      {
+        "PHY": "LE125K",
+        "Channel": "rician",
+        "EbNo_req_dB": 13.867696551724139,
+        "Penalty_vs_AWGN_dB": 2.7724842512116172
+      },
+      {
+        "PHY": "LE125K",
+        "Channel": "rayleigh",
+        "EbNo_req_dB": 14.949288888888889,
+        "Penalty_vs_AWGN_dB": 3.8540765883763672
+      }
+    ],
+    "NP": 500,
+    "EbNoStep": 2
+  },
+  "s9": {
+    "T9": [
+      {
+        "Impairment": "CFO",
+        "Value": 0,
+        "Unit": "kHz",
+        "EbNo_req_dB": 8.8454963975155287,
+        "Penalty_dB": 0
+      },
+      {
+        "Impairment": "CFO",
+        "Value": 25,
+        "Unit": "kHz",
+        "EbNo_req_dB": 8.8571999999999989,
+        "Penalty_dB": 0.01170360248447011
+      },
+      {
+        "Impairment": "CFO",
+        "Value": 50,
+        "Unit": "kHz",
+        "EbNo_req_dB": 8.9384984615384617,
+        "Penalty_dB": 0.093002064022932984
+      },
+      {
+        "Impairment": "CFO",
+        "Value": 100,
+        "Unit": "kHz",
+        "EbNo_req_dB": 9.298310869565217,
+        "Penalty_dB": 0.45281447204968828
+      },
+      {
+        "Impairment": "CFO",
+        "Value": 150,
+        "Unit": "kHz",
+        "EbNo_req_dB": 10.116073076213324,
+        "Penalty_dB": 1.270576678697795
+      },
+      {
+        "Impairment": "Timing drift",
+        "Value": 0,
+        "Unit": "ppm",
+        "EbNo_req_dB": 8.8454963975155287,
+        "Penalty_dB": 0
+      },
+      {
+        "Impairment": "Timing drift",
+        "Value": 10,
+        "Unit": "ppm",
+        "EbNo_req_dB": 8.8619240816326528,
+        "Penalty_dB": 0.016427684117124031
+      },
+      {
+        "Impairment": "Timing drift",
+        "Value": 20,
+        "Unit": "ppm",
+        "EbNo_req_dB": 8.8619240816326528,
+        "Penalty_dB": 0.016427684117124031
+      },
+      {
+        "Impairment": "Timing drift",
+        "Value": 35,
+        "Unit": "ppm",
+        "EbNo_req_dB": 8.8589404026845635,
+        "Penalty_dB": 0.013444005169034767
+      },
+      {
+        "Impairment": "Timing drift",
+        "Value": 50,
+        "Unit": "ppm",
+        "EbNo_req_dB": 8.855908724832215,
+        "Penalty_dB": 0.010412327316686287
+      },
+      {
+        "Impairment": "Phase noise",
+        "Value": -100,
+        "Unit": "dBc/Hz @100 kHz",
+        "EbNo_req_dB": 8.7747896721311474,
+        "Penalty_dB": -0.070706725384381386
+      },
+      {
+        "Impairment": "Phase noise",
+        "Value": -90,
+        "Unit": "dBc/Hz @100 kHz",
+        "EbNo_req_dB": 8.8187103030303025,
+        "Penalty_dB": -0.026786094485226286
+      },
+      {
+        "Impairment": "Phase noise",
+        "Value": -80,
+        "Unit": "dBc/Hz @100 kHz",
+        "EbNo_req_dB": 8.8677319642857135,
+        "Penalty_dB": 0.022235566770184789
+      },
+      {
+        "Impairment": "Phase noise",
+        "Value": -75,
+        "Unit": "dBc/Hz @100 kHz",
+        "EbNo_req_dB": 9.3113009009009016,
+        "Penalty_dB": 0.46580450338537283
+      },
+      {
+        "Impairment": "Phase noise",
+        "Value": -70,
+        "Unit": "dBc/Hz @100 kHz",
+        "EbNo_req_dB": 10.690662365591397,
+        "Penalty_dB": 1.8451659680758681
+      },
+      {
+        "Impairment": "DC offset",
+        "Value": 0,
+        "Unit": "% of RMS",
+        "EbNo_req_dB": 8.8454963975155287,
+        "Penalty_dB": 0
+      },
+      {
+        "Impairment": "DC offset",
+        "Value": 5,
+        "Unit": "% of RMS",
+        "EbNo_req_dB": 8.8163472392638038,
+        "Penalty_dB": -0.029149158251724927
+      },
+      {
+        "Impairment": "DC offset",
+        "Value": 10,
+        "Unit": "% of RMS",
+        "EbNo_req_dB": 8.83544131147541,
+        "Penalty_dB": -0.01005508604011851
+      },
+      {
+        "Impairment": "DC offset",
+        "Value": 20,
+        "Unit": "% of RMS",
+        "EbNo_req_dB": 9.1114354022988522,
+        "Penalty_dB": 0.26593900478332344
+      },
+      {
+        "Impairment": "DC offset",
+        "Value": 30,
+        "Unit": "% of RMS",
+        "EbNo_req_dB": 9.8229705806451619,
+        "Penalty_dB": 0.97747418312963319
+      }
+    ],
+    "reqRef": 8.8454963975155287,
+    "NP": 500
+  },
+  "s10": {
+    "results": [
+      {
+        "DUT": "Nominal",
+        "Test": "LE1M sensitivity",
+        "Wanted_dBm": null,
+        "CI_dB": null,
+        "EbNo_dB": 10.807002188183807,
+        "PER": 0.04,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "LE125K sensitivity",
+        "Wanted_dBm": null,
+        "CI_dB": null,
+        "EbNo_dB": 12.727282789153293,
+        "PER": 0.004,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "Step5 co-channel C/I 21 dB",
+        "Wanted_dBm": null,
+        "CI_dB": 21,
+        "EbNo_dB": 20,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "C/I co-channel",
+        "Wanted_dBm": -67,
+        "CI_dB": 21,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "C/I +1 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": 15,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "C/I -1 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": 15,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "C/I +2 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -17,
+        "EbNo_dB": 40,
+        "PER": 0.092,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "C/I -2 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -17,
+        "EbNo_dB": 40,
+        "PER": 0.12,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "C/I +3 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -27,
+        "EbNo_dB": 40,
+        "PER": 0.178,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "C/I -3 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -27,
+        "EbNo_dB": 40,
+        "PER": 0.22075055187637968,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "Blocking CW 2399 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -32,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nominal",
+        "Test": "Intermod n=3 (+3/+6 MHz)",
+        "Wanted_dBm": -64,
+        "CI_dB": -14,
+        "EbNo_dB": 43,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "LE1M sensitivity",
+        "Wanted_dBm": null,
+        "CI_dB": null,
+        "EbNo_dB": 6.807002188183807,
+        "PER": 0.970873786407767,
+        "Limit": 0.308,
+        "Verdict": "FAIL"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "LE125K sensitivity",
+        "Wanted_dBm": null,
+        "CI_dB": null,
+        "EbNo_dB": 8.7272827891532927,
+        "PER": 1,
+        "Limit": 0.308,
+        "Verdict": "FAIL"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "Step5 co-channel C/I 21 dB",
+        "Wanted_dBm": null,
+        "CI_dB": 21,
+        "EbNo_dB": 16,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "C/I co-channel",
+        "Wanted_dBm": -67,
+        "CI_dB": 21,
+        "EbNo_dB": 36,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "C/I +1 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": 15,
+        "EbNo_dB": 36,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "C/I -1 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": 15,
+        "EbNo_dB": 36,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "C/I +2 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -17,
+        "EbNo_dB": 36,
+        "PER": 0.086,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "C/I -2 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -17,
+        "EbNo_dB": 36,
+        "PER": 0.13,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "C/I +3 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -27,
+        "EbNo_dB": 36,
+        "PER": 0.2304147465437788,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "C/I -3 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -27,
+        "EbNo_dB": 36,
+        "PER": 0.24154589371980675,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "Blocking CW 2399 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -32,
+        "EbNo_dB": 36,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Degraded",
+        "Test": "Intermod n=3 (+3/+6 MHz)",
+        "Wanted_dBm": -64,
+        "CI_dB": -14,
+        "EbNo_dB": 39,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "LE1M sensitivity",
+        "Wanted_dBm": null,
+        "CI_dB": null,
+        "EbNo_dB": 10.807002188183807,
+        "PER": 0.04,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "LE125K sensitivity",
+        "Wanted_dBm": null,
+        "CI_dB": null,
+        "EbNo_dB": 12.727282789153293,
+        "PER": 0.004,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "Step5 co-channel C/I 21 dB",
+        "Wanted_dBm": null,
+        "CI_dB": 21,
+        "EbNo_dB": 20,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "C/I co-channel",
+        "Wanted_dBm": -67,
+        "CI_dB": 21,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "C/I +1 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": 15,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "C/I -1 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": 15,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "C/I +2 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -17,
+        "EbNo_dB": 40,
+        "PER": 0.092,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "C/I -2 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -17,
+        "EbNo_dB": 40,
+        "PER": 0.12,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "C/I +3 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -27,
+        "EbNo_dB": 40,
+        "PER": 0.19,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "C/I -3 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -27,
+        "EbNo_dB": 40,
+        "PER": 0.23148148148148148,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "Blocking CW 2399 MHz",
+        "Wanted_dBm": -67,
+        "CI_dB": -32,
+        "EbNo_dB": 40,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      },
+      {
+        "DUT": "Nonlinear",
+        "Test": "Intermod n=3 (+3/+6 MHz)",
+        "Wanted_dBm": -64,
+        "CI_dB": -14,
+        "EbNo_dB": 43,
+        "PER": 0,
+        "Limit": 0.308,
+        "Verdict": "PASS"
+      }
+    ],
+    "nReg": 2,
+    "regList": [
+      "Degraded: LE1M sensitivity",
+      "Degraded: LE125K sensitivity"
+    ],
+    "IIP3nom": -20,
+    "iip3Sweep": [
+      -20,
+      -22.5,
+      -25,
+      -27.5,
+      -30,
+      -32.5,
+      -35,
+      -37.5,
+      -40,
+      -42.5,
+      -45
+    ],
+    "perIM": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.80645161290322576,
+      1,
+      1
+    ],
+    "iip3Min": -37.5,
+    "NP": 500
+  },
+  "s11": {
+    "T11": [
+      {
+        "TX": "Nominal",
+        "Measurement": "Mod: df1avg (kHz)",
+        "Value": 250,
+        "Limit": "225..275",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "Mod: df2max > 185 kHz (% of samples)",
+        "Value": 100,
+        "Limit": ">= 99.9",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "Mod: df2avg/df1avg",
+        "Value": 1.1810530204003302,
+        "Limit": "> 0.8",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "CFO: |f0| (kHz)",
+        "Value": 3.3953284628296395E-14,
+        "Limit": "<= 150",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "Drift: max |fn - f0| (kHz)",
+        "Value": 1.8603647511383769E-12,
+        "Limit": "<= 50",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "Drift: |f1 - f0| (kHz)",
+        "Value": 2.04224415156773E-14,
+        "Limit": "<= 23",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "Drift: max |fn - fn-5| (kHz)",
+        "Value": 2.593758541280522E-12,
+        "Limit": "<= 20",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "Power: average (dBm)",
+        "Value": -2.5579538487363607E-13,
+        "Limit": "-20..+20",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Nominal",
+        "Measurement": "Power: peak - average (dB)",
+        "Value": 2.5579538487363607E-13,
+        "Limit": "<= 3",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Mod: df1avg (kHz)",
+        "Value": 249.84042553191497,
+        "Limit": "225..275",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Mod: df2max > 185 kHz (% of samples)",
+        "Value": 100,
+        "Limit": ">= 99.9",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Mod: df2avg/df1avg",
+        "Value": 1.1819870014650837,
+        "Limit": "> 0.8",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "CFO: |f0| (kHz)",
+        "Value": 59.430441898526958,
+        "Limit": "<= 150",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Drift: max |fn - f0| (kHz)",
+        "Value": 26.770626086845439,
+        "Limit": "<= 50",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Drift: |f1 - f0| (kHz)",
+        "Value": 4.7094558740794019,
+        "Limit": "<= 23",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Drift: max |fn - fn-5| (kHz)",
+        "Value": 3.9394946808536915,
+        "Limit": "<= 20",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Power: average (dBm)",
+        "Value": -2.5579538487363607E-13,
+        "Limit": "-20..+20",
+        "Verdict": "PASS"
+      },
+      {
+        "TX": "Impaired",
+        "Measurement": "Power: peak - average (dB)",
+        "Value": 2.5579538487363607E-13,
+        "Limit": "<= 3",
+        "Verdict": "PASS"
+      }
+    ]
+  },
+  "s12": {
+    "T12": [
+      {
+        "PHY": "LE1M",
+        "FadingCurve": "LE1M",
+        "Coverage_all_pct": 90.46875,
+        "Coverage_raypoints_pct": 99.143835616438352,
+        "MedianLinkMargin_dB": 19.891701579716848
+      },
+      {
+        "PHY": "LE2M",
+        "FadingCurve": "LE1M",
+        "Coverage_all_pct": 82.8125,
+        "Coverage_raypoints_pct": 90.753424657534239,
+        "MedianLinkMargin_dB": 16.881401623077036
+      },
+      {
+        "PHY": "LE125K",
+        "FadingCurve": "LE125K",
+        "Coverage_all_pct": 91.25,
+        "Coverage_raypoints_pct": 100,
+        "MedianLinkMargin_dB": 27.937917135355072
+      }
+    ],
+    "sceneName": "office",
+    "frac2M": 100,
+    "nPts": 640,
+    "nRayPts": 584,
+    "nLOS": 392,
+    "PrxMin": -100.79901570988329,
+    "PrxMax": -64.316453203207374,
+    "dx": 0.24138490063535892,
+    "txPos": [
+      0.50984572432935238,
+      0.51626160182058811,
+      2.900000047683716
+    ],
+    "Ptx_dBm": -20
+  },
+  "s13": {
+    "perNoAFH": 0.185,
+    "perAFH": 0.07,
+    "perAFHafter": 0,
+    "lastChange": 1751,
+    "allOvl": 737,
+    "duty": 0.49931220911827862,
+    "excluded": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "overlap": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "T13": [
+      {
+        "Channel": 0,
+        "Freq_MHz": 2404,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 1,
+        "Freq_MHz": 2406,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 2,
+        "Freq_MHz": 2408,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 3,
+        "Freq_MHz": 2410,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 4,
+        "Freq_MHz": 2412,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 5,
+        "Freq_MHz": 2414,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 6,
+        "Freq_MHz": 2416,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 7,
+        "Freq_MHz": 2418,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 8,
+        "Freq_MHz": 2420,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 9,
+        "Freq_MHz": 2422,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0.012,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 10,
+        "Freq_MHz": 2424,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0.18,
+        "PER_Events_noAFH": 0.16666666666666666,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 11,
+        "Freq_MHz": 2428,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.57407407407407407,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 12,
+        "Freq_MHz": 2430,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.62962962962962965,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 13,
+        "Freq_MHz": 2432,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.57407407407407407,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 14,
+        "Freq_MHz": 2434,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.54545454545454541,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 15,
+        "Freq_MHz": 2436,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.48148148148148145,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 16,
+        "Freq_MHz": 2438,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.64814814814814814,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 17,
+        "Freq_MHz": 2440,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.55555555555555558,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 18,
+        "Freq_MHz": 2442,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.57407407407407407,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 19,
+        "Freq_MHz": 2444,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.64814814814814814,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 20,
+        "Freq_MHz": 2446,
+        "WifiOverlap": true,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.62962962962962965,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 21,
+        "Freq_MHz": 2448,
+        "WifiOverlap": false,
+        "PER_WifiOn": 1,
+        "PER_Events_noAFH": 0.61111111111111116,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 22,
+        "Freq_MHz": 2450,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0.2,
+        "PER_Events_noAFH": 0.20370370370370369,
+        "ExcludedByAFH": true
+      },
+      {
+        "Channel": 23,
+        "Freq_MHz": 2452,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0.022,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 24,
+        "Freq_MHz": 2454,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 25,
+        "Freq_MHz": 2456,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 26,
+        "Freq_MHz": 2458,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 27,
+        "Freq_MHz": 2460,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 28,
+        "Freq_MHz": 2462,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 29,
+        "Freq_MHz": 2464,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 30,
+        "Freq_MHz": 2466,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 31,
+        "Freq_MHz": 2468,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 32,
+        "Freq_MHz": 2470,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 33,
+        "Freq_MHz": 2472,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 34,
+        "Freq_MHz": 2474,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 35,
+        "Freq_MHz": 2476,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      },
+      {
+        "Channel": 36,
+        "Freq_MHz": 2478,
+        "WifiOverlap": false,
+        "PER_WifiOn": 0,
+        "PER_Events_noAFH": 0,
+        "ExcludedByAFH": false
+      }
+    ],
+    "NP": 500
+  }
+}

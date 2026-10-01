@@ -1,0 +1,22 @@
+# MATLAB
+*.asv
+*.m~
+*.mex*
+slprj/
+codegen/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local tooling (machine-specific, not part of the project)
+.mcp.json
+matlab-mcp/
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/

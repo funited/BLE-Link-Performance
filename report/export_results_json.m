@@ -1,0 +1,36 @@
+function export_results_json()
+%EXPORT_RESULTS_JSON Collect every number the report quotes from results/stepN.mat
+% into results/report_data.json, so the PDF only shows values printed by runs.
+root = fileparts(fileparts(mfilename('fullpath')));
+R = fullfile(root, 'results');
+L = @(n) load(fullfile(R, n));
+t2s = @(T) table2struct(T);
+J = struct();
+
+r = L('step1.mat');  J.s1 = struct('T1', t2s(r.T1), 'hitsAll', r.hitsAll, 'hitsAFH', r.hitsAFH, ...
+                                   'nEvents', r.nEvents, 'nBad', nnz(r.bad));
+r = L('step2_per.mat'); J.s2 = struct('T2', t2s(r.T2), 'NP', r.NP, 'NF', r.NF, 'sens', r.sens);
+r = L('step3.mat');  J.s3 = struct('breakRaw_kHz', r.breakRaw_kHz, 'reqDisc', r.reqDisc, ...
+                                   'EbNoDisc', r.EbNoDisc, 'T3', t2s(r.T3));
+r = L('step4.mat');  J.s4 = struct('T4', t2s(r.T4), 'T4b', t2s(r.T4b), 'frac2Mwins', r.frac2Mwins);
+r = L('step5.mat');  J.s5 = struct('results', t2s(r.results), 'nReg', r.nReg, 'ref1', r.ref1, ...
+                                   'refc', r.refc, 'reqDiscC', r.reqDiscC);
+r = L('step6.mat');  J.s6 = struct('perNoAFH', r.perNoAFH, 'perAFH', r.perAFH, 'nOverlap', nnz(r.overlap));
+r = L('step8.mat');  J.s8 = struct('T8', t2s(r.T8), 'NP', r.NP, 'EbNoStep', r.EbNo(2) - r.EbNo(1));
+r = L('step9.mat');  J.s9 = struct('T9', t2s(r.T9), 'reqRef', r.reqRef, 'NP', r.NP);
+r = L('step10.mat'); J.s10 = struct('results', t2s(r.results), 'nReg', r.nReg, 'regList', r.regList, ...
+                                    'IIP3nom', r.IIP3nom, 'iip3Sweep', r.iip3Sweep, 'perIM', r.perIM, ...
+                                    'iip3Min', r.iip3Min, 'NP', r.NP);
+r = L('step11.mat'); J.s11 = struct('T11', t2s(r.T11));
+r = L('step12.mat'); J.s12 = struct('T12', t2s(r.T12), 'sceneName', r.sceneName, 'frac2M', r.frac2M, ...
+                                    'nPts', numel(r.Prx), 'nRayPts', nnz(isfinite(r.Prx)), 'nLOS', nnz(r.los), ...
+                                    'PrxMin', min(r.Prx(isfinite(r.Prx))), 'PrxMax', max(r.Prx(:)), ...
+                                    'dx', r.dx, 'txPos', r.txPos, 'Ptx_dBm', r.Ptx_dBm);
+r = L('step13.mat'); J.s13 = struct('perNoAFH', r.perNoAFH, 'perAFH', r.perAFH, 'perAFHafter', r.perAFHafter, ...
+                                    'lastChange', r.lastChange, 'allOvl', r.allOvl, 'duty', r.duty, ...
+                                    'excluded', find(r.badSet) - 1, 'overlap', find(r.overlap) - 1, ...
+                                    'T13', t2s(r.T13), 'NP', r.NP);
+fid = fopen(fullfile(R, 'report_data.json'), 'w');
+fwrite(fid, jsonencode(J, 'PrettyPrint', true)); fclose(fid);
+fprintf('wrote %s\n', fullfile(R, 'report_data.json'));
+end

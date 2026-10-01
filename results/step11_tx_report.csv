@@ -1,0 +1,19 @@
+TX,Measurement,Value,Limit,Verdict
+Nominal,Mod: df1avg (kHz),250,225..275,PASS
+Nominal,Mod: df2max > 185 kHz (% of samples),100,>= 99.9,PASS
+Nominal,Mod: df2avg/df1avg,1.18105302040033,> 0.8,PASS
+Nominal,CFO: |f0| (kHz),3.39532846282964e-14,<= 150,PASS
+Nominal,Drift: max |fn - f0| (kHz),1.86036475113838e-12,<= 50,PASS
+Nominal,Drift: |f1 - f0| (kHz),2.04224415156773e-14,<= 23,PASS
+Nominal,Drift: max |fn - fn-5| (kHz),2.59375854128052e-12,<= 20,PASS
+Nominal,Power: average (dBm),-2.55795384873636e-13,-20..+20,PASS
+Nominal,Power: peak - average (dB),2.55795384873636e-13,<= 3,PASS
+Impaired,Mod: df1avg (kHz),249.840425531915,225..275,PASS
+Impaired,Mod: df2max > 185 kHz (% of samples),100,>= 99.9,PASS
+Impaired,Mod: df2avg/df1avg,1.18198700146508,> 0.8,PASS
+Impaired,CFO: |f0| (kHz),59.430441898527,<= 150,PASS
+Impaired,Drift: max |fn - f0| (kHz),26.7706260868454,<= 50,PASS
+Impaired,Drift: |f1 - f0| (kHz),4.7094558740794,<= 23,PASS
+Impaired,Drift: max |fn - fn-5| (kHz),3.93949468085369,<= 20,PASS
+Impaired,Power: average (dBm),-2.55795384873636e-13,-20..+20,PASS
+Impaired,Power: peak - average (dB),2.55795384873636e-13,<= 3,PASS

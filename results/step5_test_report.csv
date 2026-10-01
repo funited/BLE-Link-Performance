@@ -1,0 +1,7 @@
+DUT,Test,PER,Limit,Verdict
+Nominal,LE1M sensitivity,0.035,0.308,PASS
+Nominal,LE125K sensitivity,0,0.308,PASS
+Nominal,LE1M co-channel C/I 21 dB,0,0.308,PASS
+Degraded,LE1M sensitivity,0.970873786407767,0.308,FAIL
+Degraded,LE125K sensitivity,1,0.308,FAIL
+Degraded,LE1M co-channel C/I 21 dB,0,0.308,PASS
